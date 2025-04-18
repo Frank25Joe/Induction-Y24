@@ -24,4 +24,10 @@ Level 10: The base64 command with option -d decodes and prints the contents of a
 
 Level 11: The command cat data.txt | tr 'a-z A-Z' 'n-za-m N-ZA-M' prints the unrotated password. Here, tr 'a-z A-Z' 'n-za-m N-ZA-M' maps the half the letters a, b,..,z to n,...z and the 2nd half to a,b,...m; and same for capital letters.
 
-Level 12:
+Level 12: First we make a temporary directory to make working easier. We do this by using mktemp -d and copy data.txt into it. The file data.txt is a hexadump which can be decoded using the command xxd -r data.txt compressed which converts the hexadump into binary and stores it in a new file called compressed. Using file compressed, we see that it is of type gzip compressed. Rename compressed to compressed.gz and decompress using gzip -d compressed.gz. Then file compressed shows that it is bzip2 compressed. Rename to compressed.bz2 and decompress using bzip2 -d compressed.bz2. Then file command shows that it is a POSIX tar archive. Use tar -r -f comp to extract it. ls shows the file data5.bin and it is another archive. Keep repeating the above steps till we get the password.
+
+Level 13: We get the private key using cat sshkey.private and make a new file (say named "a") and copy the key into it. After logging out, we use the identity file option (-i) of ssh to login to bandit14 using the private key using the command ssh -i a bandit.labs.overthewire.org -p 2220 -l bandit14.
+
+Level 14: We can submit the password using netcat. The command nc localhost 30000 prompts the user to enter information which will be sent to the overthewire server at port 30000. The information to be entered is the current level password.
+
+Level 15: Similar to the previous level, use command openssl s_client localhost:30001 followed by the current password. The reason we can't use nc here is because nc can't handle SSL/TLS encryption which this level requires.
