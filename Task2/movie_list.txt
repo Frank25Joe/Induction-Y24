@@ -1,0 +1,31 @@
+10
+Inside Out 2
+Animation
+8.2 105 150 500
+Dune: Part Two
+Sci-Fi
+8 155 200 800
+Sonic the Hedgehog 3
+Animation
+7.5 100 150 400
+Kung Fu Panda 4
+Animation
+7.6 95 150 400
+Mission Impossible: Fallout
+Action
+9 150 250 800
+Top Gun: Maverick
+Action
+8.7 135 250 800
+Sully
+Drama
+7.7 96 150 300
+Liar Liar
+Comedy
+6.9 86 150 300
+Bruce Almighty
+Comedy
+6.8 101 150 300
+Oppenheimer
+Drama
+8.9 180 200 400

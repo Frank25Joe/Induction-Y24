@@ -1,0 +1,31 @@
+10
+Breaking Bad
+Drama
+9.5 5 12 900 1800
+Stranger Things
+Sci-Fi
+8.7 4 9 850 1500
+Game of Thrones
+Fantasy Drama
+9.3 8 10 900 1800
+Friends
+Sitcom
+8.8 10 24 1200 2000
+The Office
+Comedy
+8.9 9 22 1200 2000
+The Big Bang Theory
+Sitcom
+8.1 12 23 1200 2000
+Loki
+Action Fantasy
+8.1 2 6 400 800
+Money Heist
+Crime Drama
+8.6 5 8 450 900
+The Queen's Gambit - Miniseries
+Drama
+8.6 1 7 300 500
+Chernobyl - Miniseries
+Historical Drama
+8.2 1 5 300 500
