@@ -108,3 +108,207 @@ NOTE: Your Program should retain its memory of whatever data has been fed by the
 - Feel free to get **creative** with features, but stick to the core requirements.
 - Hint: For storage think of each object as a file.
 ---
+# Task 3
+# ROS 2 Project: Printer Server with Print Queue and Job Status Publisher
+
+# 🧠 Objective
+
+Create a ROS 2-based Printer Server system where:
+
+* Users can submit print jobs via a ROS 2 service.
+* Jobs are queued and processed sequentially.
+* Status of each job is published to a ROS 2 topic.
+* The entire system runs inside a Docker container.
+
+This task helps in understanding ROS 2 services, publishers/subscribers, custom messages, managing node logic, and containerization.
+
+---
+
+## 🧩 Components Overview
+
+### 1. **Print Job Service** (`PrintJob.srv`)
+
+Custom service to submit print jobs.
+
+**Definition:**
+
+```srv
+string document_name
+---
+bool accepted
+```
+
+---
+
+### 2. **Printer Node**
+
+Responsible for:
+
+* Receiving print job service calls.
+* Queueing jobs internally.
+* Processing one job at a time (simulated delay).
+* Publishing status messages for each job.
+
+**Publishes:** `/print_status` (`std_msgs/String`)
+
+**Service Server:** `/print_job` (uses `PrintJob.srv`)
+
+**Status Examples:**
+
+* "Job Queued: file1.pdf"
+* "Started printing: file1.pdf"
+* "Completed printing: file1.pdf"
+
+---
+
+### 3. **Client Node**
+
+Create a dedicated ROS 2 node that sends print job requests to the server by calling the `/print_job` service.
+
+**Responsibilities:**
+
+* Accept document names as input from the user or argument.
+* Send a request using the `PrintJob` service.
+* Optionally, subscribe to `/print_status` to track progress.
+
+---
+
+## 📁 Suggested Package Structure
+
+```
+printer_system/
+├── printer_server/
+│   ├── printer_node.py           # Contains queue and service logic
+│   └── CMakeLists.txt
+├── printer_client/
+│   ├── client_node.py            # Node to send job requests
+│   └── CMakeLists.txt
+├── srv/
+│   └── PrintJob.srv              # Custom service definition
+├── launch/
+│   └── printer_launch.py         # Launch all nodes together (optional)
+└── package.xml
+```
+
+---
+
+## 🚀 Launch Instructions (Without Docker)
+
+1. **Build the workspace**
+
+```bash
+colcon build
+source install/setup.bash
+```
+
+2. **Run the Printer Node**
+
+```bash
+ros2 run printer_server printer_node
+```
+
+3. **Run the Client Node**
+
+```bash
+ros2 run printer_client client_node --ros-args -p document_name:=myfile.pdf
+```
+
+4. **Monitor Status Topic**
+
+```bash
+ros2 topic echo /print_status
+```
+
+---
+
+## 🧪 Example Outputs
+
+### ✅ 1. Service Call: `/print_job`
+
+```bash
+ros2 service call /print_job printer_server/srv/PrintJob "{document_name: 'example.pdf'}"
+```
+
+**Output:**
+
+```
+requester: making request: printer_server.srv.PrintJob_Request(document_name='example.pdf')
+
+response:
+  accepted: True
+```
+
+### ✅ 2. Printer Node Terminal Output
+
+```
+[INFO] [printer_node]: Received print job request: example.pdf
+[INFO] [printer_node]: Job Queued: example.pdf
+[INFO] [printer_node]: Started printing: example.pdf
+[INFO] [printer_node]: Printing...
+[INFO] [printer_node]: Printing...
+[INFO] [printer_node]: Completed printing: example.pdf
+```
+
+### ✅ 3. Topic Echo: `/print_status`
+
+```bash
+ros2 topic echo /print_status
+```
+
+**Output:**
+
+```yaml
+data: "Job Queued: example.pdf"
+---
+data: "Started printing: example.pdf"
+---
+data: "Completed printing: example.pdf"
+```
+
+### ✅ 4. Multiple Job Requests
+
+```bash
+ros2 service call /print_job printer_server/srv/PrintJob "{document_name: 'doc1.pdf'}"
+ros2 service call /print_job printer_server/srv/PrintJob "{document_name: 'doc2.pdf'}"
+ros2 service call /print_job printer_server/srv/PrintJob "{document_name: 'doc3.pdf'}"
+```
+
+**Printer Node Output:**
+
+```
+[INFO] [printer_node]: Received print job request: doc1.pdf
+[INFO] [printer_node]: Job Queued: doc1.pdf
+[INFO] [printer_node]: Received print job request: doc2.pdf
+[INFO] [printer_node]: Job Queued: doc2.pdf
+[INFO] [printer_node]: Received print job request: doc3.pdf
+[INFO] [printer_node]: Job Queued: doc3.pdf
+[INFO] [printer_node]: Started printing: doc1.pdf
+[INFO] [printer_node]: Completed printing: doc1.pdf
+[INFO] [printer_node]: Started printing: doc2.pdf
+[INFO] [printer_node]: Completed printing: doc2.pdf
+[INFO] [printer_node]: Started printing: doc3.pdf
+[INFO] [printer_node]: Completed printing: doc3.pdf
+```
+
+---
+
+## 🔧 Optional Extensions
+
+* Add priority levels to jobs.
+* Support for job cancellation.
+* Save logs of completed jobs to a file.
+* Create a simple frontend using `rqt`.
+
+---
+
+## 🎓 Learning Outcomes
+
+* ROS 2 service creation and usage
+* Topic publishing and subscribing
+* Managing internal state (queues) in nodes
+* Designing ROS packages with modular architecture
+* Containerizing ROS 2 projects for deployment
+## Note: You need to provide multiple docker files or single if you want to seperate server and client (optional) as you wish along with compose.yaml or bash script
+---
+
+Happy ROSing! 🖨️🤖
