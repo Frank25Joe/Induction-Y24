@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/printer_client/printer_client.egg-info
+writing ../../build/printer_client/printer_client.egg-info/PKG-INFO
+writing dependency_links to ../../build/printer_client/printer_client.egg-info/dependency_links.txt
+writing entry points to ../../build/printer_client/printer_client.egg-info/entry_points.txt
+writing requirements to ../../build/printer_client/printer_client.egg-info/requires.txt
+writing top-level names to ../../build/printer_client/printer_client.egg-info/top_level.txt
+writing manifest file '../../build/printer_client/printer_client.egg-info/SOURCES.txt'
+reading manifest file '../../build/printer_client/printer_client.egg-info/SOURCES.txt'
+writing manifest file '../../build/printer_client/printer_client.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/shash/Task3/build/printer_client/build
+creating /home/shash/Task3/build/printer_client/build/lib
+creating /home/shash/Task3/build/printer_client/build/lib/printer_client
+copying printer_client/__init__.py -> /home/shash/Task3/build/printer_client/build/lib/printer_client
+copying printer_client/client_node.py -> /home/shash/Task3/build/printer_client/build/lib/printer_client
+running install
+running install_lib
+creating /home/shash/Task3/install/printer_client/lib/python3.10/site-packages/printer_client
+copying /home/shash/Task3/build/printer_client/build/lib/printer_client/__init__.py -> /home/shash/Task3/install/printer_client/lib/python3.10/site-packages/printer_client
+copying /home/shash/Task3/build/printer_client/build/lib/printer_client/client_node.py -> /home/shash/Task3/install/printer_client/lib/python3.10/site-packages/printer_client
+byte-compiling /home/shash/Task3/install/printer_client/lib/python3.10/site-packages/printer_client/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/shash/Task3/install/printer_client/lib/python3.10/site-packages/printer_client/client_node.py to client_node.cpython-310.pyc
+running install_data
+creating /home/shash/Task3/install/printer_client/share/ament_index
+creating /home/shash/Task3/install/printer_client/share/ament_index/resource_index
+creating /home/shash/Task3/install/printer_client/share/ament_index/resource_index/packages
+copying resource/printer_client -> /home/shash/Task3/install/printer_client/share/ament_index/resource_index/packages
+copying package.xml -> /home/shash/Task3/install/printer_client/share/printer_client
+running install_egg_info
+Copying ../../build/printer_client/printer_client.egg-info to /home/shash/Task3/install/printer_client/lib/python3.10/site-packages/printer_client-0.0.0-py3.10.egg-info
+running install_scripts
+Installing client_node script to /home/shash/Task3/install/printer_client/lib/printer_client
+writing list of installed files to '/home/shash/Task3/build/printer_client/install.log'

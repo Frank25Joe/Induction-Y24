@@ -1,0 +1,19 @@
+{
+  "package_name": "custom_interfaces",
+  "output_dir": "/home/shash/Task3/build/custom_interfaces/rosidl_typesupport_introspection_c/custom_interfaces",
+  "template_dir": "/home/shash/ros2_humble/install/rosidl_typesupport_introspection_c/share/rosidl_typesupport_introspection_c/resource",
+  "idl_tuples": [
+    "/home/shash/Task3/build/custom_interfaces/rosidl_adapter/custom_interfaces:srv/PrintJob.idl"
+  ],
+  "target_dependencies": [
+    "/home/shash/ros2_humble/install/rosidl_typesupport_introspection_c/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c",
+    "/home/shash/ros2_humble/install/rosidl_typesupport_introspection_c/local/lib/python3.10/dist-packages/rosidl_typesupport_introspection_c/__init__.py",
+    "/home/shash/ros2_humble/install/rosidl_typesupport_introspection_c/share/rosidl_typesupport_introspection_c/resource/idl__rosidl_typesupport_introspection_c.h.em",
+    "/home/shash/ros2_humble/install/rosidl_typesupport_introspection_c/share/rosidl_typesupport_introspection_c/resource/idl__type_support.c.em",
+    "/home/shash/ros2_humble/install/rosidl_typesupport_introspection_c/share/rosidl_typesupport_introspection_c/resource/msg__rosidl_typesupport_introspection_c.h.em",
+    "/home/shash/ros2_humble/install/rosidl_typesupport_introspection_c/share/rosidl_typesupport_introspection_c/resource/msg__type_support.c.em",
+    "/home/shash/ros2_humble/install/rosidl_typesupport_introspection_c/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em",
+    "/home/shash/ros2_humble/install/rosidl_typesupport_introspection_c/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em",
+    "/home/shash/Task3/build/custom_interfaces/rosidl_adapter/custom_interfaces/srv/PrintJob.idl"
+  ]
+}

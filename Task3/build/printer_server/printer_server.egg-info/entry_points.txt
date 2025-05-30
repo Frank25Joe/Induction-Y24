@@ -1,0 +1,3 @@
+[console_scripts]
+printer_node = printer_server.printer_node:main
+

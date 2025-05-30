@@ -1,0 +1,37 @@
+[1.141s] Invoking command in '/home/shash/Task3/src/printer_client': AMENT_PREFIX_PATH=/home/shash/Task3/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/shash/Task3/install/custom_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/shash/Task3/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/shash/Task3/build/printer_client/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/shash/Task3/install/printer_client/lib/python3.10/site-packages:/home/shash/Task3/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/printer_client build --build-base /home/shash/Task3/build/printer_client/build install --record /home/shash/Task3/build/printer_client/install.log --single-version-externally-managed install_data
+[1.452s] running egg_info
+[1.452s] creating ../../build/printer_client/printer_client.egg-info
+[1.452s] writing ../../build/printer_client/printer_client.egg-info/PKG-INFO
+[1.452s] writing dependency_links to ../../build/printer_client/printer_client.egg-info/dependency_links.txt
+[1.452s] writing entry points to ../../build/printer_client/printer_client.egg-info/entry_points.txt
+[1.452s] writing requirements to ../../build/printer_client/printer_client.egg-info/requires.txt
+[1.452s] writing top-level names to ../../build/printer_client/printer_client.egg-info/top_level.txt
+[1.452s] writing manifest file '../../build/printer_client/printer_client.egg-info/SOURCES.txt'
+[1.453s] reading manifest file '../../build/printer_client/printer_client.egg-info/SOURCES.txt'
+[1.454s] writing manifest file '../../build/printer_client/printer_client.egg-info/SOURCES.txt'
+[1.454s] running build
+[1.454s] running build_py
+[1.454s] creating /home/shash/Task3/build/printer_client/build
+[1.454s] creating /home/shash/Task3/build/printer_client/build/lib
+[1.454s] creating /home/shash/Task3/build/printer_client/build/lib/printer_client
+[1.454s] copying printer_client/__init__.py -> /home/shash/Task3/build/printer_client/build/lib/printer_client
+[1.454s] copying printer_client/client_node.py -> /home/shash/Task3/build/printer_client/build/lib/printer_client
+[1.454s] running install
+[1.454s] running install_lib
+[1.455s] creating /home/shash/Task3/install/printer_client/lib/python3.10/site-packages/printer_client
+[1.455s] copying /home/shash/Task3/build/printer_client/build/lib/printer_client/__init__.py -> /home/shash/Task3/install/printer_client/lib/python3.10/site-packages/printer_client
+[1.456s] copying /home/shash/Task3/build/printer_client/build/lib/printer_client/client_node.py -> /home/shash/Task3/install/printer_client/lib/python3.10/site-packages/printer_client
+[1.457s] byte-compiling /home/shash/Task3/install/printer_client/lib/python3.10/site-packages/printer_client/__init__.py to __init__.cpython-310.pyc
+[1.458s] byte-compiling /home/shash/Task3/install/printer_client/lib/python3.10/site-packages/printer_client/client_node.py to client_node.cpython-310.pyc
+[1.458s] running install_data
+[1.458s] creating /home/shash/Task3/install/printer_client/share/ament_index
+[1.458s] creating /home/shash/Task3/install/printer_client/share/ament_index/resource_index
+[1.458s] creating /home/shash/Task3/install/printer_client/share/ament_index/resource_index/packages
+[1.458s] copying resource/printer_client -> /home/shash/Task3/install/printer_client/share/ament_index/resource_index/packages
+[1.458s] copying package.xml -> /home/shash/Task3/install/printer_client/share/printer_client
+[1.458s] running install_egg_info
+[1.460s] Copying ../../build/printer_client/printer_client.egg-info to /home/shash/Task3/install/printer_client/lib/python3.10/site-packages/printer_client-0.0.0-py3.10.egg-info
+[1.461s] running install_scripts
+[1.490s] Installing client_node script to /home/shash/Task3/install/printer_client/lib/printer_client
+[1.490s] writing list of installed files to '/home/shash/Task3/build/printer_client/install.log'
+[1.508s] Invoked command in '/home/shash/Task3/src/printer_client' returned '0': AMENT_PREFIX_PATH=/home/shash/Task3/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/shash/Task3/install/custom_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/shash/Task3/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/shash/Task3/build/printer_client/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/shash/Task3/install/printer_client/lib/python3.10/site-packages:/home/shash/Task3/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/printer_client build --build-base /home/shash/Task3/build/printer_client/build install --record /home/shash/Task3/build/printer_client/install.log --single-version-externally-managed install_data

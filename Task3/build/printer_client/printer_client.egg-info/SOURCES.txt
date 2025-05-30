@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/printer_client/printer_client.egg-info/PKG-INFO
+../../build/printer_client/printer_client.egg-info/SOURCES.txt
+../../build/printer_client/printer_client.egg-info/dependency_links.txt
+../../build/printer_client/printer_client.egg-info/entry_points.txt
+../../build/printer_client/printer_client.egg-info/requires.txt
+../../build/printer_client/printer_client.egg-info/top_level.txt
+../../build/printer_client/printer_client.egg-info/zip-safe
+printer_client/__init__.py
+printer_client/client_node.py
+resource/printer_client
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

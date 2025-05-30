@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from custom_interfaces/srv/PrintJob.srv
+// generated code does not contain a copyright notice
+
+
+module custom_interfaces {
+  module srv {
+    struct PrintJob_Request {
+      string document_name;
+    };
+    struct PrintJob_Response {
+      boolean accepted;
+    };
+  };
+};

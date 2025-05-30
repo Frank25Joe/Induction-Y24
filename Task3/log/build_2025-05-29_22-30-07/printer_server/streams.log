@@ -1,0 +1,21 @@
+[1.110s] Invoking command in '/home/shash/Task3/src/printer_server': AMENT_PREFIX_PATH=/home/shash/Task3/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/shash/Task3/install/custom_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/shash/Task3/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/shash/Task3/build/printer_server/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/shash/Task3/install/printer_server/lib/python3.10/site-packages:/home/shash/Task3/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/printer_server build --build-base /home/shash/Task3/build/printer_server/build install --record /home/shash/Task3/build/printer_server/install.log --single-version-externally-managed install_data
+[1.417s] running egg_info
+[1.417s] writing ../../build/printer_server/printer_server.egg-info/PKG-INFO
+[1.417s] writing dependency_links to ../../build/printer_server/printer_server.egg-info/dependency_links.txt
+[1.417s] writing entry points to ../../build/printer_server/printer_server.egg-info/entry_points.txt
+[1.418s] writing requirements to ../../build/printer_server/printer_server.egg-info/requires.txt
+[1.418s] writing top-level names to ../../build/printer_server/printer_server.egg-info/top_level.txt
+[1.419s] reading manifest file '../../build/printer_server/printer_server.egg-info/SOURCES.txt'
+[1.419s] writing manifest file '../../build/printer_server/printer_server.egg-info/SOURCES.txt'
+[1.419s] running build
+[1.419s] running build_py
+[1.419s] running install
+[1.420s] running install_lib
+[1.422s] running install_data
+[1.422s] running install_egg_info
+[1.425s] removing '/home/shash/Task3/install/printer_server/lib/python3.10/site-packages/printer_server-0.0.0-py3.10.egg-info' (and everything under it)
+[1.425s] Copying ../../build/printer_server/printer_server.egg-info to /home/shash/Task3/install/printer_server/lib/python3.10/site-packages/printer_server-0.0.0-py3.10.egg-info
+[1.425s] running install_scripts
+[1.454s] Installing printer_node script to /home/shash/Task3/install/printer_server/lib/printer_server
+[1.454s] writing list of installed files to '/home/shash/Task3/build/printer_server/install.log'
+[1.472s] Invoked command in '/home/shash/Task3/src/printer_server' returned '0': AMENT_PREFIX_PATH=/home/shash/Task3/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/shash/Task3/install/custom_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/shash/Task3/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/shash/Task3/build/printer_server/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/shash/Task3/install/printer_server/lib/python3.10/site-packages:/home/shash/Task3/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/printer_server build --build-base /home/shash/Task3/build/printer_server/build install --record /home/shash/Task3/build/printer_server/install.log --single-version-externally-managed install_data

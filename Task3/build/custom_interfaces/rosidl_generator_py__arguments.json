@@ -1,0 +1,24 @@
+{
+  "package_name": "custom_interfaces",
+  "output_dir": "/home/shash/Task3/build/custom_interfaces/rosidl_generator_py/custom_interfaces",
+  "template_dir": "/home/shash/ros2_humble/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource",
+  "idl_tuples": [
+    "/home/shash/Task3/build/custom_interfaces/rosidl_adapter/custom_interfaces:srv/PrintJob.idl"
+  ],
+  "target_dependencies": [
+    "/home/shash/ros2_humble/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py",
+    "/home/shash/ros2_humble/install/rosidl_generator_py/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py",
+    "/home/shash/ros2_humble/install/rosidl_generator_py/local/lib/python3.10/dist-packages/rosidl_generator_py/generate_py_impl.py",
+    "/home/shash/ros2_humble/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_action_pkg_typesupport_entry_point.c.em",
+    "/home/shash/ros2_humble/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_action.py.em",
+    "/home/shash/ros2_humble/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_idl_pkg_typesupport_entry_point.c.em",
+    "/home/shash/ros2_humble/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_idl_support.c.em",
+    "/home/shash/ros2_humble/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_idl.py.em",
+    "/home/shash/ros2_humble/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_msg_pkg_typesupport_entry_point.c.em",
+    "/home/shash/ros2_humble/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_msg_support.c.em",
+    "/home/shash/ros2_humble/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
+    "/home/shash/ros2_humble/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
+    "/home/shash/ros2_humble/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
+    "/home/shash/Task3/build/custom_interfaces/rosidl_adapter/custom_interfaces/srv/PrintJob.idl"
+  ]
+}
